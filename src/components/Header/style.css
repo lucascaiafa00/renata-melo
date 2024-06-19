@@ -1,0 +1,30 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 10%;
+}
+
+.links{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.links a{
+    text-decoration: none;
+    font-family: 'Italiana', sans-serif;
+    font-size: 20px;
+    color: var(--cor3);
+}
+
+.links a:hover{
+    letter-spacing: 1px;
+}
+
+.logo{
+    height: 50px;
+}

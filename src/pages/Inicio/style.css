@@ -1,0 +1,30 @@
+#inicio{
+    height: 90vh;
+    background-color: var(--cor2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: 'Italiana', sans-serif;
+    font-size: 12vw;
+    width: min-content;
+    letter-spacing: 5px;
+    color: var(--cor3);
+}
+
+#inicio img{
+    width: 35vw;
+    align-self: flex-end;
+}
+
+.subtitulo{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    padding: 4px 0;
+    letter-spacing: 5px;
+    color: var(--cor4);
+    border-top: 2px var(--cor4) solid;
+}
