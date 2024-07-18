@@ -11,7 +11,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<Inicio/>}/>
-        <Route path='/galeria/:servico' element={<Galeria/>}/>
+        <Route path='/galeria/:id' element={<Galeria/>}/>
       </Routes>
       <Footer/>
     </>

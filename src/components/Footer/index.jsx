@@ -1,6 +1,7 @@
+import "./style.css"
 export default function Footer() {
   return (
-    <footer id="footer" style={{backgroundColor:"blue"}}>
+    <footer id="footer">
 asdf
     </footer>
   )

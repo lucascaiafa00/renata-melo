@@ -1,0 +1,37 @@
+.galeria{
+    background-color: var(--cor3);
+    min-height: 90vh;
+    padding: 15vh 0;
+    text-align: center;
+    background-image: url("../../assets/logo2.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+
+}
+
+.titulo-servico{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--cor2);
+}
+
+.container-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.imagem-galeria{
+    width: 300px;
+    overflow: hidden;
+    border: solid 5px var(--cor1);
+}
+
+.galeria p{
+    font-size: 30px;
+    color: var(--cor2);
+    font-weight: 900;
+}

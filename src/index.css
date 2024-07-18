@@ -18,11 +18,28 @@ code {
   padding: 0;
   box-sizing: border-box;
   transition: ease .2s;
+  scroll-behavior: smooth;
 }
 
 :root{
   --cor1: #C09F80;
   --cor2: #D7CEC7;
   --cor3: #76323F;
-  --cor4: #434343;
+  --cor4: #262626;
+}
+
+main{
+  overflow: hidden;
+}
+
+p,a{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2{
+  font-family: 'Italiana', serif;
+}
+
+h2{
+  font-size: 80px;
 }

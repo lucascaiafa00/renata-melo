@@ -1,10 +1,57 @@
 .diamond {
+    position: relative;
     width: 200px;
     height: 200px;
-    background-color: var(--cor1);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 10px 20px black;
+    transition: ease .5s;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.diamond p{
+    color: var(--cor2);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.link-servico{
+    border: solid 2px var(--cor2);
+    color: var(--cor2);
+    padding: 2px 5px;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    transition: ease .4s;
+    position: relative;
+}
+
+.link-servico::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: var(--cor2);
+    transition: ease .4s;
+    z-index: -1;
+}
+
+.link-servico:hover::before{
+    width: 100%;
+}
+
+.link-servico:hover{
+    color: var(--cor4);
 }
