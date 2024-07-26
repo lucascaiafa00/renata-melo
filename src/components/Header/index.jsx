@@ -8,21 +8,21 @@ export default function Header() {
     <header>
       <ul className="links">
         <li>
-          <HashLink smooth to="/#sobre-mim">Sobre Mim</HashLink>
+          <HashLink smooth to="/#sobre-mim" className="link-section link-text">Sobre Mim</HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#servicos">Serviços</HashLink>
+          <HashLink smooth to="/#servicos" className="link-section link-text">Serviços</HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#inicio">
+          <HashLink smooth to="/#inicio" className="link-section">
             <img className="logo" src={logo} alt="logotipo" />
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#atendimento">Atendimento</HashLink>
+          <HashLink smooth to="/#atendimento" className="link-section link-text">Atendimento</HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#contato">Contato</HashLink>
+          <HashLink smooth to="/#contato" className="link-section link-text">Contato</HashLink>
         </li>
       </ul>
     </header>

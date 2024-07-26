@@ -1,57 +1,86 @@
-.diamond {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 10px 10px 10px 20px black;
-    transition: ease .5s;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.background-servico {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: ease 0.5s;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
-.diamond p{
-    color: var(--cor2);
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 20px;
-    padding: 5px;
-    text-align: center;
+.background-servico.blur{
+  filter: blur(5px);
 }
 
-.link-servico{
-    border: solid 2px var(--cor2);
-    color: var(--cor2);
-    padding: 2px 5px;
-    font-size: 18px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-wrap: nowrap;
-    transition: ease .4s;
-    position: relative;
+.container-servico h3 {
+  color: var(--cor1);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Italiana';
+  letter-spacing: 2px;
 }
 
-.link-servico::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    background-color: var(--cor2);
-    transition: ease .4s;
-    z-index: -1;
+.link-servico {
+  border: solid 2px var(--cor2);
+  color: var(--cor2);
+  padding: 2px 5px;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: nowrap;
+  transition: ease 0.4s;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  
 }
 
-.link-servico:hover::before{
-    width: 100%;
+.container-servico {
+  position: relative;
+  width: min-content;
+  height: 500px;
+  clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
+  background-color: var(--cor5);
 }
 
-.link-servico:hover{
-    color: var(--cor4);
+.informacao-servico {
+  width: 100%;
+  height: 100px;
+  overflow-y: scroll;
+}
+
+.link-servico::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: var(--cor2);
+  transition: ease 0.4s;
+  z-index: -1;
+}
+
+.link-servico:hover::before {
+  width: 100%;
+}
+
+.link-servico:hover {
+  color: var(--cor3);
+}
+
+.descricao-servico {
+  color: var(--cor2);
+  font-size: 18px;
+  text-align: center;
+  padding: 0 4px;
+  font-style: italic;
+  letter-spacing: 1px;
 }

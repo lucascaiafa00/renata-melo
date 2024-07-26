@@ -1,146 +1,253 @@
-#inicio{
-    height: 85vh;
-    background-color: var(--cor2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 0 8vw;
+#inicio {
+  height: 85vh;
+  background-color: var(--cor2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 8vw;
+  overflow: hidden;
 }
 
-.titulo{
-    font-family: 'Italiana', sans-serif;
-    font-size: 100px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: var(--cor3);
-    position: relative;
-    z-index: 1;
+.titulo {
+  font-family: "Italiana", sans-serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--cor3);
+  position: relative;
+  z-index: 1;
 }
 
-#inicio img{
-    height: 90%;
-    align-self: flex-end;
+#inicio img {
+  height: 90%;
+  align-self: flex-end;
 }
 
-.subtitulo{
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 20px;
-    font-style: italic;
-    padding: 4px 0;
-    letter-spacing: 5px;
-    color: var(--cor4);
-    position: relative;
-    z-index: 1;
+.subtitulo {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+  padding: 4px 0;
+  letter-spacing: 5px;
+  color: var(--cor4);
+  position: relative;
+  z-index: 1;
 }
 
-.subtitulo::after{
-    content: "";
-    width: 50px;
-    height: 4px;
-    background-color: var(--cor4);
+.subtitulo::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: var(--cor4);
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+
+#sobre-mim {
+  background-color: var(--cor2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 10vw;
+  gap: 20px;
+}
+
+#sobre-mim h2,
+#contato h2 {
+  color: var(--cor3);
+}
+
+#sobre-mim p {
+  font-size: 25px;
+  color: var(--cor4);
+  max-width: 900px;
+  margin-top: 40px;
+}
+
+#sobre-mim img {
+  max-height: 80vh;
+  max-width: 50%;
+}
+
+#servicos {
+  background-color: var(--cor3);
+  min-height: 85vh;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+#servicos h2,
+#atendimento h2 {
+  text-align: center;
+  font-family: "Italiana", sans-serif;
+  color: var(--cor2);
+}
+
+.lista-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 10px;
+}
+
+#atendimento {
+  min-height: 50vh;
+  background-color: var(--cor3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5% 0;
+}
+
+#atendimento p {
+  font-size: 25px;
+  color: var(--cor1);
+  font-style: italic;
+  text-align: center;
+  line-height: 40px;
+}
+
+#atendimento span {
+  background-color: var(--cor2);
+  color: var(--cor5);
+  font-weight: 900;
+  padding: 2px 6px;
+}
+
+#contato {
+  padding: 60px 5%;
+  background-color: var(--cor2);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contato h2 {
+  margin-bottom: 40px;
+}
+
+.links-contato {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  font-size: 18px;
+}
+
+.link-contato {
+  text-decoration: none;
+  color: var(--cor3);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: fit-content;
+  font-style: italic;
+}
+
+.link-contato::before {
+  content: "";
+  transition: ease 0.2s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  background-color: var(--cor1);
+  height: 2px;
+}
+
+.link-contato:hover::before {
+  width: 100%;
+}
+
+.formulario-contato {
+  max-width: 600px;
+  padding: 20px 10px;
+}
+
+.input,
+#textArea {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--cor4);
+  padding: 5px;
+  background-color: var(--cor2);
+  border: none;
+  border-bottom: solid 2px var(--cor1);
+  outline: none;
+}
+
+#textArea {
+  height: 160px;
+}
+
+.label {
+  font-size: 18px;
+  color: var(--cor4);
+}
+
+.submit-button {
+  position: relative;
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 900;
+  border: solid 2px var(--cor2);
+  border-radius: 4px;
+  background-color: var(--cor3);
+  padding: 2px 15px;
+  color: var(--cor2);
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  color: var(--cor1);
+  background-color: var(--cor5);
+}
+
+@media (max-width: 768px) {
+  #inicio img {
     position: absolute;
-    top: -5px;
-    left: 0;
-}
+    height: 80%;
+    width: auto;
+    left: 50%;
+    z-index: 0;
+    opacity: 50%;
+  }
 
-#sobre-mim{
-    background-color: var(--cor2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5% 10vw;
-    gap: 20px;
-}
+  .titulo {
+    font-size: 50px;
+  }
 
-#sobre-mim h2{
-    color: var(--cor3);
-    margin-bottom: 50px;
-}
-
-#sobre-mim p{
-    font-size: 25px;
-    color: var(--cor4);
-    max-width: 900px;
-}
-
-#sobre-mim img{
-    max-height: 80vh;
-}
-
-#servicos{
-    background-color: var(--cor3);
-    min-height: 85vh;
-    padding: 25px 0;
-    display: flex;
+  #sobre-mim {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: soft-light;
-}
+  }
 
-#servicos h2, #atendimento h2{
+  #sobre-mim h2 {
     text-align: center;
-    font-family: 'Italiana', sans-serif;
-    font-size: 60px;
-    color: var(--cor2);
-}
+  }
 
-.lista-servicos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px 10px;
-}
+  #sobre-mim img {
+    max-width: 90%;
+  }
 
-#atendimento{
-    min-height: 50vh;
-    background-color: var(--cor3);
-    display: flex;
+  #sobre-mim p {
+  }
+  #contato {
     flex-direction: column;
+    gap: 20px;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 5% 0;
-}
-
-#atendimento p{
-    font-size: 25px;
-    color: var(--cor1);
-    font-style: italic;
-    text-align: center;
-    line-height: 40px;
-}
-
-#atendimento span{
-    background-color: var(--cor2);
-    color: var(--cor3);
-    font-weight: 900;
-    padding: 2px 6px;
-}
-
-@media (max-width: 768px)  {
-    #inicio img {
-        position: absolute;
-        height: 80%;
-        width: auto;
-        left: 50%;
-        z-index: 0;
-        opacity: 50%;
-    }
-
-    .titulo{
-        font-size: 50px;
-    }
-
-    #sobre-mim{
-        flex-direction: column;
-    }
-
-    #sobre-mim img{
-        width: 90%;
-    }
+  }
 }

@@ -15,17 +15,32 @@ header{
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
+    position: relative;
 }
 
-.links a{
+.link-section{
     text-decoration: none;
     font-family: 'Italiana', sans-serif;
     font-size: 24px;
+    font-weight: 900;
     color: var(--cor3);
+    position: relative;
 }
 
-.links a:hover{
-    letter-spacing: 1px;
+.link-text::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--cor1);
+    transition: ease .3s;
+    border-radius: 2px;
+}
+
+.link-text:hover::before{
+    width: 100%;
 }
 
 .logo{
